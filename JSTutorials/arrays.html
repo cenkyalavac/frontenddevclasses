@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div>
+<label>İsim:</label>
+<input type="text" id="isim"/>
+</div>
+
+<div>
+<button id="ekle">Diziye Ekle</button>
+</div>
+<div>
+<p id="count"></p>
+
+</div>
+
+</body>
+</html>
+<script>
+    var isimdizi =[];
+    document.getElementById("ekle").addEventListener("click",function(){
+        var data = document.getElementById("isim").value;
+        isimdizi.push(data);
+
+        document.getElementById("count").innerHTML = "Dizi uzunluğu:  " + isimdizi.length;
+
+    })
+</script>

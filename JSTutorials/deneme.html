@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <span>Not:</span><input type="number" id="not"><br>
+    <button id="hesapla">Hesapla</button>
+    </body>
+</html>
+<script>
+document.getElementById("hesapla").addEventListener("click", function(){
+
+var not = document.getElementById("not").value
+alert(not + 10);
+
+if (not >=0 && not < 45)
+{
+alert ("1 - KALDIN");
+document.getElementsByTagName("body")[0].style.backgroundColor = "red";
+}
+
+if (not >=45 && not < 55)
+{
+alert ("2 - kılpayı");
+}
+
+if (not >=55 && not < 75)
+{
+alert ("3 - geçti");
+}
+
+if (not >=75 && not < 100)
+{
+alert ("4 - süper");
+}
+
+
+})
+
+</script>

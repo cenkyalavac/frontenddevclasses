@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+<input type="email" name="email" id="email">
+<input type="password" name="password" id="pwd">
+    </div>
+
+    <div>
+<button id="giris">Giriş</button>
+    </div>
+</body>
+</html>
+<script>
+document.getElementById("giris").addEventListener("click", function(){
+var useremail = document.getElementById("email").value;
+var password = document.getElementById("pwd").value;
+
+//email cenk@eltur.co ve password 123 ise giriş yapacak
+
+if(useremail == 'cenk@eltur.co' && password == '123')
+{
+    window.location.href='http://eltur.co';
+}
+else
+{
+alert("Allahını seven hata versin!");
+}
+
+
+})
+
+</script>

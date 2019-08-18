@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="sagakay" style="position:absolute">Sağa Kayan buton</button>
+</body>
+</html>
+
+<script>
+var x = 20;
+//ekrandaki butonu tıkladığında butonu 20px sağa kaydır
+//ekranın ortasını aşarsa tekrar 20 px yap
+document.getElementById("sagakay").addEventListener("click",function(){
+    //butonun kendi genişliğini düşeceğiz tam ortalaması için
+    var butongenislik = document.getElementById("sagakay").offsetWidth
+
+//ekran genişliğinin yarısını yakalamaca
+var y = (window.innerWidth / 2)-butongenislik;
+
+if (x > y)
+
+{
+    x = 20;
+
+}
+else {
+
+    x = x +20;
+}
+document.getElementById("sagakay").style.left= x + "px";
+// x = x +20;
+
+})
+</script>
